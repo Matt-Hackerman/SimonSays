@@ -23,6 +23,9 @@ makeId();
 
 $('#start').click(function() {
     highLight(gridArr, lives);
+    $('.start-btn').css({
+        visibility : 'hidden'
+    });
 });
 
 $('.ss-item').click(function() {
@@ -52,6 +55,10 @@ $('.retry-btn').click(function() {
     lives = 1;
     multi = 1;
     count = 0;
+    
+    $('.start-btn').css({
+        visibility : 'visible'
+    });
 
     $('.end-game').css({
         visibility : 'hidden'
